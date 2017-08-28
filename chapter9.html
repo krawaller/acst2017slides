@@ -1,0 +1,475 @@
+<!doctype html>
+<html lang="en">
+
+  <head>
+    <meta charset="utf-8">
+
+    <title>JavaScript repetition</title>
+
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
+    <link rel="stylesheet" href="mc2/styles/reveal.css">
+    <link rel="stylesheet" href="mc2/styles/theme.css" id="theme">
+    <link rel="stylesheet" href="mc2/styles/code.css">
+    <!--STARTCOURSESPECIFICSTYLES--><link rel="stylesheet" href="styles/cssdemo.css">
+<link rel="stylesheet" href="styles/styles.css"><!--ENDCOURSESPECIFICSTYLES-->
+  </head>
+
+  <body>
+    <div id="pos"></div>
+    <div class="reveal">
+      <div class="slides">
+        <section class="slide chaptertitle">
+          <div class="slidecontent">
+            <div class="chapternumber"> chapter 9 of 12 </div>
+            <h1>JavaScript repetition</h1>
+            
+          </div>
+        </section>
+        
+        <!--STARTSECTIONINDEX--><section class="slide sectionlist">
+  <div class="slidecontent">
+    <h3>Sections in this chapter</h3>
+    <ol>
+    <li><a href="#/2">Your&nbsp;teacher</a></li><li><a href="#/3">JavaScript..&nbsp;Again.</a></li><li><a href="#/4">Exercise&nbsp;time!</a></li><li><a href="#/5">Node&nbsp;and&nbsp;NPM</a></li><li><a href="#/6">Exercise&nbsp;&#8209;&nbsp;Node&nbsp;and&nbsp;NPM</a></li>
+    </ol>
+  </div>
+</section>
+<!--ENDSECTIONINDEX-->
+        <!--STARTCHAPTERCONTENT--><!--STARTSECTION1--><section>
+  <section class="slide sectiontitle">
+    <div class="slidecontent">
+      <div class='sectioncount'>Section 1/5</div>
+      <h3>Your teacher</h3>
+      
+    </div>
+  </section>
+  <section class="slide" data-pos="9-1-1">
+<span class="pos">9-1-1</span>
+<div class="slidecontent"><p><strong>Who am I?</strong></p>
+<ul>
+<li><p>Started working with 68k assembler/C/C++ early on. </p>
+</li>
+<li><p>Moved into Java, and later into .Net (C#) during the early 2000&#39;s</p>
+</li>
+<li><p>Transitioned more and more into web technologies a few years
+back (Docker, Node.js, JavaScript, Angular, React ...)</p>
+</li>
+<li><p>Still hacking on native code now and then, especially when working
+on rendering techniques.</p>
+</li>
+</ul>
+</div></section>
+<section class="slide" data-pos="9-1-2">
+<span class="pos">9-1-2</span>
+<div class="slidecontent"><p>Contact information: </p>
+<ul>
+<li><strong>Email</strong>: <a href="mailto:eric@edument.se">eric@edument.se</a></li>
+<li><strong>Phone</strong>: 0760 - 29 18 96</li>
+</ul>
+</div></section>
+
+</section>
+<!--ENDSECTION1--><!--STARTSECTION2--><section>
+  <section class="slide sectiontitle">
+    <div class="slidecontent">
+      <div class='sectioncount'>Section 2/5</div>
+      <h3>JavaScript.. Again.</h3>
+      
+    </div>
+  </section>
+  <section class="slide" data-pos="9-2-1">
+<span class="pos">9-2-1</span>
+<div class="slidecontent"><p>There are no slides in this section (but there is an exercise!).
+Basically, let&#39;s just discuss JavaScript real quick and repeat some
+of the foundational stuff.</p>
+</div></section>
+<section class="slide" data-pos="9-2-2">
+<span class="pos">9-2-2</span>
+<div class="slidecontent"><ul>
+<li><p>Native types</p>
+</li>
+<li><p>Objects and references</p>
+</li>
+<li><p>Arrays</p>
+</li>
+<li><p>Functions</p>
+</li>
+<li><p>Functional programming</p>
+</li>
+</ul>
+</div></section>
+</section>
+<!--ENDSECTION2--><!--STARTSECTION3--><section>
+  <section class="slide sectiontitle">
+    <div class="slidecontent">
+      <div class='sectioncount'>Section 3/5</div>
+      <h3>Exercise time!</h3>
+      
+    </div>
+  </section>
+  <section class="slide" data-pos="9-3-1">
+<span class="pos">9-3-1</span>
+<div class="slidecontent"><p>This exercise is mostly about repeating a lot of stuff you&#39;ve already seen, to <strong>cement</strong> some core syntax and
+semantics of JavaScript.</p>
+</div></section>
+<section class="slide" data-pos="9-3-2">
+<span class="pos">9-3-2</span>
+<div class="slidecontent"><p>You can put all of your code in a single file, and simply run it with <code>node myfile.js</code> (or whatever you decide
+to call it)</p>
+</div></section>
+<section class="slide" data-pos="9-3-3">
+<span class="pos">9-3-3</span>
+<div class="slidecontent"><p>Useful links during this exercise:</p>
+<p><small>Arrays:
+<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array</a></p>
+<p>Objects: <a href="https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Objects/Basics">https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Objects/Basics</a></p>
+<p>Functions: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Functions">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Functions</a></p>
+<p>Loop syntaxes: <a href="https://developer.mozilla.org/sv-SE/docs/Web/JavaScript/Guide/Loops_and_iteration">https://developer.mozilla.org/sv-SE/docs/Web/JavaScript/Guide/Loops_and_iteration</a></p>
+<p>Reduce: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/Reduce">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/Reduce</a>
+</small></p>
+</div></section>
+<section class="slide" data-pos="9-3-4">
+<span class="pos">9-3-4</span>
+<div class="slidecontent"><p><strong>Arrays</strong></p>
+<p>Let&#39;s start simple by creating an array. You can call this array <code>persons</code>, for instance. Make it contain at least
+<strong>three different names</strong> as strings.</p>
+</div></section>
+<section class="slide" data-pos="9-3-5">
+<span class="pos">9-3-5</span>
+<div class="slidecontent"><p><strong>Functions</strong></p>
+<p>Create a function <code>printPersons</code>, which loops over the array and prints their name, one at a time. You should be
+able to call it like this:</p>
+<pre><code>printPersons(<span class="hljs-name">persons</span>)<span class="hljs-comment">;</span>
+</code></pre></div></section>
+<section class="slide" data-pos="9-3-6">
+<span class="pos">9-3-6</span>
+<div class="slidecontent"><p>Also, create a <strong>second</strong> array with a different set of names. Test your <code>print</code> function with both arrays to
+make sure it works as expected.</p>
+</div></section>
+<section class="slide" data-pos="9-3-7">
+<span class="pos">9-3-7</span>
+<div class="slidecontent"><p><strong>Objects</strong></p>
+<p>Change your <strong>names</strong> into objects instead. Each object in the array should have the following properties:</p>
+<ul>
+<li>First name</li>
+<li>Last name</li>
+<li>Age</li>
+</ul>
+<p>Try your print function again. Does it still work as expected on your arrays?</p>
+</div></section>
+<section class="slide" data-pos="9-3-8">
+<span class="pos">9-3-8</span>
+<div class="slidecontent"><p>Modify your <code>printPersons</code> function to print the first name, last name and age of each person in the array. For
+instance, if you have an object such as:</p>
+<pre><code>{
+    <span class="hljs-attribute">firstName</span>: <span class="hljs-string">"Kalle"</span>,
+    lastName: <span class="hljs-string">"Anka"</span>,
+    age: <span class="hljs-number">112</span>
+}
+</code></pre><p>... It should print it as:</p>
+<pre><code><span class="hljs-string">"Kalle Anka is 112 years old"</span>
+</code></pre><p>(or something similar)</p>
+</div></section>
+<section class="slide" data-pos="9-3-9">
+<span class="pos">9-3-9</span>
+<div class="slidecontent"><p>Finally, create a <strong>new function</strong> which outputs the <strong>average age</strong>, the <strong>youngest age</strong> and the <strong>oldest age</strong>
+in the array. It should be callable in a similar way as our last one:</p>
+<pre><code>outputStats(<span class="hljs-name">persons</span>)<span class="hljs-comment">;</span>
+</code></pre></div></section>
+<section class="slide" data-pos="9-3-10">
+<span class="pos">9-3-10</span>
+<div class="slidecontent"><p><strong>Bonus if time allows</strong></p>
+<p>If you wrote the last function with for-loops, can you find a way to use <strong>functional programming</strong>
+(by using map, reduce, and/or filter etc.) to rewrite it without loops?</p>
+</div></section>
+</section>
+<!--ENDSECTION3--><!--STARTSECTION4--><section>
+  <section class="slide sectiontitle">
+    <div class="slidecontent">
+      <div class='sectioncount'>Section 4/5</div>
+      <h3>Node and NPM</h3>
+      <p>workbench and pantry</p>
+</p>
+    </div>
+  </section>
+  <section class="slide list" data-pos="9-4-1">
+<span class="pos">9-4-1</span>
+<div class="slidecontent">
+<p>In the course we&#39;ll rely heavily on</p>
+<ul>
+<li><span>a</span>the <strong>JavaScript runtime Node</strong> and </li>
+<li><span>b</span>the <strong>package manager npm</strong></li>
+</ul>
+<p>...so let&#39;s touch briefly on both!</p>
+</div></section>
+<section class="slide num numA" data-pos="9-4-2">
+<span class="pos">9-4-2</span>
+<div class="slidecontent">
+<p><a href="https://nodejs.org/en/">Node</a> is mostly associated with <strong>running JavaScript on the server</strong>, but in actuality it is a <strong>JavaScript runtime that can be run anywhere</strong>.</p>
+</div></section>
+<section class="slide" data-pos="9-4-3">
+<span class="pos">9-4-3</span>
+<div class="slidecontent"><p>Some <strong>differences versus the in-browser runtime</strong> is that</p>
+<ul>
+<li>Node has <strong>no DOM</strong></li>
+<li>Node can <strong>read and write files</strong></li>
+<li>Node has <strong>its own module system</strong></li>
+</ul>
+</div></section>
+<section class="slide" data-pos="9-4-4">
+<span class="pos">9-4-4</span>
+<div class="slidecontent"><p>There are <strong>two ways to execute JS</strong> with Node. We can enter the <strong>REPL</strong> by typing <code>node</code> in a node terminal...</p>
+<p><img src="resources/images/noderepl.png" alt=""></p>
+</div></section>
+<section class="slide" data-pos="9-4-5">
+<span class="pos">9-4-5</span>
+<div class="slidecontent"><p>...or we can <strong>execute JavaScript files</strong> by typing <code>node myfile.js</code> which executes the JS code in <code>myfile.js</code>.</p>
+<p>This of course is the <strong>most common usage</strong> of Node.</p>
+<p>JS developers frequently use Node to <strong>run code as part of their build chain</strong>.</p>
+</div></section>
+<section class="slide num numB" data-pos="9-4-6">
+<span class="pos">9-4-6</span>
+<div class="slidecontent">
+<p>However, Node is also used for <strong>running <code>npm</code></strong>, through which we can <strong>download packages from the online repository</strong> at <a href="https://www.npmjs.com/">https://www.npmjs.com/</a>.</p>
+</div></section>
+<section class="slide" data-pos="9-4-7">
+<span class="pos">9-4-7</span>
+<div class="slidecontent"><p>Allegedly npm is an <strong>acronym for Node Package Manager</strong>, but <strong>npm themselves deny that</strong> through <strong>consistently using lower-case characters</strong>, and through the <strong>top-left corner of their homepage</strong>: </p>
+<p><img src="resources/images/npmmeaning.png" alt=""></p>
+</div></section>
+<section class="slide" data-pos="9-4-8">
+<span class="pos">9-4-8</span>
+<div class="slidecontent"><p>We download packages by</p>
+<ul>
+<li><strong>turning our own code into a package</strong> through adding a <strong><code>package.json</code> file</strong></li>
+<li><strong>listing the packages we depend on</strong> in that file</li>
+<li>typing <code>npm install</code> to <strong>download all listed dependencies</strong> to <code>node_modules</code></li>
+<li><strong>using those modules</strong> in our code!</li>
+</ul>
+</div></section>
+<section class="slide" data-pos="9-4-9">
+<span class="pos">9-4-9</span>
+<div class="slidecontent"><p>By having <strong><code>package.json</code> as part of the project</strong>, but <strong>excluding <code>node_modules</code></strong>, we get a <strong>small code repository</strong> which can still be <strong>easily inflated with dependencies</strong>.</p>
+<p>And we can still be sure that <strong>everyone has the same dependencies</strong>.</p>
+<p>(...at least if we&#39;re careful...)</p>
+</div></section>
+<section class="slide" data-pos="9-4-10">
+<span class="pos">9-4-10</span>
+<div class="slidecontent"><p>A <strong>downloaded published module</strong> will normally <strong>look like this</strong>:</p>
+<p><img src="resources/diagrams/modulecontent.svg" alt=""></p>
+<p>The <code>package.json</code> file will specify <strong>where in the source the entry point is</strong>.</p>
+</div></section>
+<section class="slide" data-pos="9-4-11">
+<span class="pos">9-4-11</span>
+<div class="slidecontent"><p>So! <strong>Node&#39;s module system</strong> that we mentioned earlier lets us</p>
+<ul>
+<li><strong>import stuff from other files</strong> by using <code>require</code></li>
+<li><strong>export stuff from files</strong> by assigning to <code>module.exports</code></li>
+</ul>
+</div></section>
+<section class="slide" data-pos="9-4-12">
+<span class="pos">9-4-12</span>
+<div class="slidecontent"><p>But <strong>now for the beautiful part</strong> - we can <strong>also require packages</strong> from <code>node_modules</code>!</p>
+<p>Thus Node and npm together solve both the <strong>code modularisation problem</strong> along with <strong>3rd party code import problem</strong>.</p>
+</div></section>
+<section class="slide" data-pos="9-4-13">
+<span class="pos">9-4-13</span>
+<div class="slidecontent"><p>Here&#39;s the <strong>full truth</strong> about <strong>how we require stuff</strong>:</p>
+<p><img src="resources/diagrams/loadmodule.svg" alt=""></p>
+</div></section>
+<section class="slide" data-pos="9-4-14">
+<span class="pos">9-4-14</span>
+<div class="slidecontent"><p>The important part is to realise that there is <strong>no magic involved</strong>, and that Node provides us with a <strong>convenient way to load</strong>...</p>
+<ul>
+<li><strong>core modules</strong> (like <code>fs</code>, <code>http</code>, etc)</li>
+<li><strong>3rd party code</strong> (like <code>angular</code>)</li>
+<li><strong>own local modules</strong> (like <code>./src/mycomponent</code>)</li>
+</ul>
+</div></section>
+</section>
+<!--ENDSECTION4--><!--STARTSECTION5--><section>
+  <section class="slide sectiontitle">
+    <div class="slidecontent">
+      <div class='sectioncount'>Section 5/5</div>
+      <h3>Exercise - Node and NPM</h3>
+      <p>Getting acquainted with Node and NPM</p>
+</p>
+    </div>
+  </section>
+  <section class="slide" data-pos="9-5-1">
+<span class="pos">9-5-1</span>
+<div class="slidecontent"><p>This exercise mainly lets you try a few <strong>Node and NPM commands</strong> out, just
+to get a bit acquainted with them.</p>
+</div></section>
+<section class="slide" data-pos="9-5-2">
+<span class="pos">9-5-2</span>
+<div class="slidecontent"><p>Since we&#39;ll be using these tools throughout the course, having a solid
+understanding of them will go a long way.</p>
+</div></section>
+<section class="slide" data-pos="9-5-3">
+<span class="pos">9-5-3</span>
+<div class="slidecontent"><p>We&#39;ll create a very simple/stupid project. There&#39;s not really any code
+to write in this exercise.</p>
+</div></section>
+<section class="slide" data-pos="9-5-4">
+<span class="pos">9-5-4</span>
+<div class="slidecontent"><p>First, let&#39;s create a new folder where you&#39;ll keep your project.
+Navigate to this folder from a <strong>terminal</strong> by <strong>cd [name of your folder]</strong></p>
+</div></section>
+<section class="slide" data-pos="9-5-5">
+<span class="pos">9-5-5</span>
+<div class="slidecontent"><p>Inside this folder, from the terminal, run <code>npm init</code>. 
+Just hit enter to accept the default values all the way.</p>
+</div></section>
+<section class="slide" data-pos="9-5-6">
+<span class="pos">9-5-6</span>
+<div class="slidecontent"><p>Check the content of the folder. As you can see, there&#39;s a new file (package.json)</p>
+<p>Peek inside package.json. You can see that there&#39;s some basic info in there, such as name, version, description and so on.</p>
+</div></section>
+<section class="slide" data-pos="9-5-7">
+<span class="pos">9-5-7</span>
+<div class="slidecontent"><p>Lets try to install a package. Try typing the following from a command line:</p>
+<pre><code>npm <span class="hljs-keyword">install</span> <span class="hljs-comment">--save lodash</span>
+</code></pre></div></section>
+<section class="slide" data-pos="9-5-8">
+<span class="pos">9-5-8</span>
+<div class="slidecontent"><p>Check the package.json again. There&#39;s a new section called <code>dependencies</code> in there, and it lists <strong>lodash</strong> as a dependency!</p>
+</div></section>
+<section class="slide" data-pos="9-5-9">
+<span class="pos">9-5-9</span>
+<div class="slidecontent"><p>Another thing that happened was that you got a new folder (<code>node_modules</code>).
+Check inside the folder, and you&#39;ll see a new folder called <code>lodash</code>.</p>
+</div></section>
+<section class="slide" data-pos="9-5-10">
+<span class="pos">9-5-10</span>
+<div class="slidecontent"><p>Some dependencies and packages are <strong>only necessary during development</strong>, and
+are not meant to be deployed. You can install these using the <code>--save-dev</code>
+flag instead of the <code>--save</code> one that we used before.</p>
+<p>Try installing a dev package now by typing:</p>
+<pre><code>npm install --<span class="hljs-built_in">save</span>-<span class="hljs-built_in">dev</span> eslint
+</code></pre></div></section>
+<section class="slide" data-pos="9-5-11">
+<span class="pos">9-5-11</span>
+<div class="slidecontent"><p>Check package.json again. Notice that the new package got listed in a new section called <code>devDependencies</code>.</p>
+</div></section>
+<section class="slide" data-pos="9-5-12">
+<span class="pos">9-5-12</span>
+<div class="slidecontent"><p>Now, check inside the <code>node_modules</code> folder. Notice that we got <strong>a lot more packages</strong>
+now. Turns out, the <code>eslint</code> package has dependencies of its own, which got installed too.</p>
+</div></section>
+<section class="slide" data-pos="9-5-13">
+<span class="pos">9-5-13</span>
+<div class="slidecontent"><p>Since we have lodash installed, we should be able to try it out. Create a file in the same
+folder as <code>package.json</code>, and call it <code>index.js</code>.</p>
+</div></section>
+<section class="slide" data-pos="9-5-14">
+<span class="pos">9-5-14</span>
+<div class="slidecontent"><p>In <code>index.js</code>, add the following code:</p>
+<pre><code><span class="hljs-comment">// Reverse the names in a list and print them</span>
+<span class="hljs-comment">// to the console</span>
+
+<span class="hljs-keyword">var</span> lodash= <span class="hljs-built_in">require</span>(<span class="hljs-string">'lodash'</span>);
+<span class="hljs-keyword">var</span> names = [ <span class="hljs-string">"Eric"</span>, <span class="hljs-string">"David"</span>, <span class="hljs-string">"Carl"</span> ];
+
+lodash.map(names, <span class="hljs-function"><span class="hljs-keyword">function</span> (<span class="hljs-params">name</span>) </span>{
+    <span class="hljs-keyword">return</span> name.split(<span class="hljs-string">''</span>).reverse().join(<span class="hljs-string">''</span>);
+}).forEach(<span class="hljs-function"><span class="hljs-keyword">function</span> (<span class="hljs-params">name</span>) </span>{
+    <span class="hljs-built_in">console</span>.log(name);
+});
+</code></pre></div></section>
+<section class="slide" data-pos="9-5-15">
+<span class="pos">9-5-15</span>
+<div class="slidecontent"><p>Try running the program by typing <code>node index</code>. You should see a list of reversed names.</p>
+</div></section>
+<section class="slide" data-pos="9-5-16">
+<span class="pos">9-5-16</span>
+<div class="slidecontent"><p>Try deleting your <code>node_modules</code> folder, and then run <code>node index</code> again.</p>
+</div></section>
+<section class="slide" data-pos="9-5-17">
+<span class="pos">9-5-17</span>
+<div class="slidecontent"><p>We can reinstall our dependencies easily since they&#39;re listed in <code>package.json</code>. Just type <code>npm install</code> to reinstall them again!</p>
+</div></section>
+<section class="slide" data-pos="9-5-18">
+<span class="pos">9-5-18</span>
+<div class="slidecontent"><p>Finally, Let&#39;s delete <code>node_modules</code> again, and run the command <code>npm install --production</code> instead. What got installed this time?</p>
+</div></section>
+</section>
+<!--ENDSECTION5--><!--ENDCHAPTERCONTENT-->
+        
+
+      </div>
+    </div>
+
+    <script type="text/javascript">
+      var basehref = window.location.href.replace(/chapter\d.*?$/,'')
+
+      document.addEventListener("keydown",function(e){
+        var code = e.which || e.keyCode;
+        if (code===13){
+          window.location.href = basehref+"index.html?from="+(9-1);
+        } else if (code >= 49 && code <= 5+48) {
+          window.location.hash = "#/" + (code-48+1+0);
+        }
+        if (9 < 12) {
+          if (code===99){ // the letter C for next Chapter
+            window.location.href = basehref+"chapter"+(9+1)+".html"
+          }
+        }
+      });
+    </script>
+    <script src="mc2/scripts/head.js" type="text/javascript"></script>
+    <script src="mc2/scripts/reveal.js" type="text/javascript"></script>
+    <script src="mc2/scripts/jquery.js" type="text/javascript"></script>
+    <script type="text/javascript">
+
+  Reveal.initialize({
+    controls: true,
+    progress: true,
+    history: true,
+    center: true,
+    showNotes: false,
+    transition: 'slide',
+    dependencies: [
+      { src: 'mc2/scripts/plugin/notes/notes.js', async: true }
+    ]
+  })
+
+    window.onload = function(){
+
+      var links = document.querySelectorAll("a.link");
+      for(var i=0;i<links.length;i++){
+        var link = links[i];
+        link.innerHTML = link.innerHTML.replace(/ /g,'&nbsp;')
+      }
+      var posElem = document.getElementById('pos')
+      function updateReference(){
+        setTimeout(function(){
+          var currentpos = document.querySelector('section.present[data-pos]')
+          if (currentpos){
+            posElem.innerHTML = currentpos.getAttribute('data-pos')
+          } else {
+            posElem.innerHTML = ''
+          }
+          if (document.querySelector('.present.chaptertitle')){
+            document.body.classList.add('atchaptertitle');
+          } else {
+            document.body.classList.remove('atchaptertitle');
+          }
+        },10)
+      }
+
+      window.addEventListener("hashchange",updateReference);
+
+      updateReference();
+    };
+
+    </script>
+    <!--STARTCOURSESPECIFICSCRIPTS--><script type="text/javascript" src="scripts/bootstrap.js"></script>
+<script type="text/javascript" src="scripts/cssdemo.js"></script>
+<script type="text/javascript" src="scripts/scoped_polyfill.js"></script><!--ENDCOURSESPECIFICSCRIPTS-->
+    <script type="text/javascript" src="/reload/reload.js"></script>
+  </body>
+</html>

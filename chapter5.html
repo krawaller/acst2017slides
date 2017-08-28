@@ -1,0 +1,496 @@
+<!doctype html>
+<html lang="en">
+
+  <head>
+    <meta charset="utf-8">
+
+    <title>CSS Bootstrap</title>
+
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
+    <link rel="stylesheet" href="mc2/styles/reveal.css">
+    <link rel="stylesheet" href="mc2/styles/theme.css" id="theme">
+    <link rel="stylesheet" href="mc2/styles/code.css">
+    <!--STARTCOURSESPECIFICSTYLES--><link rel="stylesheet" href="styles/cssdemo.css">
+<link rel="stylesheet" href="styles/styles.css"><!--ENDCOURSESPECIFICSTYLES-->
+  </head>
+
+  <body>
+    <div id="pos"></div>
+    <div class="reveal">
+      <div class="slides">
+        <section class="slide chaptertitle">
+          <div class="slidecontent">
+            <div class="chapternumber"> chapter 5 of 12 </div>
+            <h1>CSS Bootstrap</h1>
+            <span>TV chef style</p>
+</span>
+          </div>
+        </section>
+        
+        <!--STARTSECTIONINDEX--><section class="slide sectionlist">
+  <div class="slidecontent">
+    <h3>Sections in this chapter</h3>
+    <ol>
+    <li><a href="#/2">CSS&nbsp;Bootstrap&nbsp;overview</a></li><li><a href="#/3">Usage</a></li><li><a href="#/4">The&nbsp;Grid&nbsp;system</a></li><li><a href="#/5">Bootstrap&nbsp;components</a></li><li><a href="#/6">Behaviour</a></li><li><a href="#/7">Exercise&nbsp;&#8209;&nbsp;trying&nbsp;it&nbsp;out</a></li><li><a href="#/8">Exercise&nbsp;&#8209;&nbsp;Trying&nbsp;LESS&nbsp;too</a></li>
+    </ol>
+  </div>
+</section>
+<!--ENDSECTIONINDEX-->
+        <!--STARTCHAPTERCONTENT--><!--STARTSECTION1--><section>
+  <section class="slide sectiontitle">
+    <div class="slidecontent">
+      <div class='sectioncount'>Section 1/7</div>
+      <h3>CSS Bootstrap overview</h3>
+      <p>what&#39;s in the package?</p>
+</p>
+    </div>
+  </section>
+  <section class="slide" data-pos="5-1-1">
+<span class="pos">5-1-1</span>
+<div class="slidecontent"><p>Bootstrap, or Twitter Bootstrap, is a <strong>&quot;CSS framework&quot;</strong>, with some <strong>optional JavaScript</strong> tucked onto the side.</p>
+<p>The homepage is at <a href="http://getbootstrap.com/">http://getbootstrap.com</a>.</p>
+</div></section>
+<section class="slide list" data-pos="5-1-2">
+<span class="pos">5-1-2</span>
+<div class="slidecontent">
+<p>Here&#39;s an attempt at <strong>making sense of the package</strong>:</p>
+<ul>
+<li><span>a</span>Grid system</li>
+<li><span>b</span>Components</li>
+<li><span>c</span>Helper classes</li>
+<li><span>d</span>Automated jQuery plugins</li>
+</ul>
+</div></section>
+<section class="slide num numA" data-pos="5-1-3">
+<span class="pos">5-1-3</span>
+<div class="slidecontent">
+<p>The <strong>grid system</strong> is perhaps the most important part. It allows you to lay out your page in a <strong>12-column system</strong>.</p>
+</div></section>
+<section class="slide num numB" data-pos="5-1-4">
+<span class="pos">5-1-4</span>
+<div class="slidecontent">
+<p>The <strong>components</strong> are our main building blocks. Boostrap defines <strong>classes</strong> you add to these to make them look/behave as expected.</p>
+<pre><code class="lang-html"><span class="hljs-tag">&lt;<span class="hljs-name">button</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"btn btn-primary"</span> <span class="hljs-attr">type</span>=<span class="hljs-string">"button"</span>&gt;</span>
+  Messages <span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"badge"</span>&gt;</span>4<span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span>
+</code></pre>
+<button class="btn btn-primary" type="button">
+  Messages <span class="badge">4</span>
+</button></div></section>
+<section class="slide num numC" data-pos="5-1-5">
+<span class="pos">5-1-5</span>
+<div class="slidecontent">
+<p>Bootstrap also contains a whole bunch of <strong>helper classes</strong>: ready-made solutions to common needs.</p>
+<pre><code class="lang-html"><span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"pull-right"</span>&gt;</span>I will float right<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+</code></pre>
+<div class="pull-right" style="background-color:red;">I will float right</div></div></section>
+<section class="slide num numD" data-pos="5-1-6">
+<span class="pos">5-1-6</span>
+<div class="slidecontent">
+<p>Finally it also includes some JavaScript-powered <strong>behavioral components</strong>.</p>
+</div></section>
+<section class="slide" data-pos="5-1-7">
+<span class="pos">5-1-7</span>
+<div class="slidecontent"><p>Throughout all these various things, the core idea is the same;</p>
+<p>Bootstrap <strong>defines a bunch of CSS classes</strong>, which you need to learn about!</p>
+</div></section>
+<section class="slide" data-pos="5-1-8">
+<span class="pos">5-1-8</span>
+<div class="slidecontent"><p>All in all, Bootstrap is a <strong>super-useful tool</strong> that many web developers refuse to work without. It has become kind of like the jQuery of the CSS world!</p>
+</div></section>
+<section class="slide" data-pos="5-1-9">
+<span class="pos">5-1-9</span>
+<div class="slidecontent"><p>However, careful about <a href="http://adventurega.me/bootstrap/">being too obvious</a>!</p>
+</div></section>
+</section>
+<!--ENDSECTION1--><!--STARTSECTION2--><section>
+  <section class="slide sectiontitle">
+    <div class="slidecontent">
+      <div class='sectioncount'>Section 2/7</div>
+      <h3>Usage</h3>
+      <p>Plugging it in</p>
+</p>
+    </div>
+  </section>
+  <section class="slide" data-pos="5-2-1">
+<span class="pos">5-2-1</span>
+<div class="slidecontent"><p>Exactly how we install bootstrap depends on <strong>what parts we want to use</strong>.</p>
+<p>But let&#39;s talk through the possible inclusions!</p>
+</div></section>
+<section class="slide" data-pos="5-2-2">
+<span class="pos">5-2-2</span>
+<div class="slidecontent"><ul>
+<li>The <strong>core CSS file</strong>, <code>bootstrap.css</code>, is mandatory</li>
+<li>There&#39;s a <strong>JS file</strong> for the behavioral components</li>
+<li>There&#39;s an optional <strong>theme CSS file</strong></li>
+<li>And a <strong>folder of fonts</strong> for the glyphicons.</li>
+</ul>
+</div></section>
+<section class="slide" data-pos="5-2-3">
+<span class="pos">5-2-3</span>
+<div class="slidecontent"><p>Beyond that there&#39;s not much to say - simply <strong>include the files you need</strong>!</p>
+<p>You can do it via CDN, but mostly having a <strong>local file is preferrable</strong>.</p>
+</div></section>
+</section>
+<!--ENDSECTION2--><!--STARTSECTION3--><section>
+  <section class="slide sectiontitle">
+    <div class="slidecontent">
+      <div class='sectioncount'>Section 3/7</div>
+      <h3>The Grid system</h3>
+      <p>Making sense of the layout</p>
+</p>
+    </div>
+  </section>
+  <section class="slide" data-pos="5-3-1">
+<span class="pos">5-3-1</span>
+<div class="slidecontent"><p>The <strong>grid layout</strong> lets us lay out our website in <strong>12 columns</strong>, which is a very common workflow in the printing and design world.</p>
+<p>Let&#39;s see it in action!</p>
+</div></section>
+<section class="slide" data-pos="5-3-2">
+<span class="pos">5-3-2</span>
+<div class="slidecontent"><pre><code class="lang-html"><span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"container"</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"row"</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"col-md-6"</span>&gt;</span>hello<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"col-md-6"</span>&gt;</span>world<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+  <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"row"</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"col-md-3"</span>&gt;</span>this<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"col-md-9"</span>&gt;</span>is pretty cool!<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+  <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+</code></pre>
+<div class="row">
+  <div class="col-md-6">
+    <div style="text-align: center; background-color:blue; margin: 3px;">hello</div>
+  </div>
+  <div class="col-md-6">
+    <div style="text-align: center; background-color:blue; margin: 3px;">world</div>
+  </div>
+</div>
+<div class="row">
+  <div class="col-md-3">
+    <div style="text-align: center; background-color:blue; margin: 3px;">this</div>
+  </div>
+  <div class="col-md-9">
+    <div style="text-align: center; background-color:blue; margin: 3px;">is pretty cool</div>
+  </div>
+</div></div></section>
+<section class="slide" data-pos="5-3-3">
+<span class="pos">5-3-3</span>
+<div class="slidecontent"><p>Picking it apart, we see that...</p>
+<ul>
+<li>Everything must be inside a <strong><code>container</code></strong> (or <code>container-fluid</code>)</li>
+<li>All columns must be inside a <strong><code>row</code></strong></li>
+<li>Each &quot;cell&quot; must say <strong>how many columns wide</strong> it should be</li>
+<li>The <strong>total width should be 12</strong> in each row</li>
+</ul>
+</div></section>
+<section class="slide" data-pos="5-3-4">
+<span class="pos">5-3-4</span>
+<div class="slidecontent"><p>The grid is implemented using <code>float</code>s. So under the hood there are styles like this:</p>
+<pre><code class="lang-css"><span class="hljs-selector-class">.col-md-</span>* { <span class="hljs-attribute">float</span>: left; }
+<span class="hljs-selector-class">.col-md-6</span> { <span class="hljs-attribute">width</span>: <span class="hljs-number">50%</span>; }
+<span class="hljs-selector-class">.col-md-3</span> { <span class="hljs-attribute">width</span>: <span class="hljs-number">25%</span>; }
+</code></pre>
+</div></section>
+<section class="slide" data-pos="5-3-5">
+<span class="pos">5-3-5</span>
+<div class="slidecontent"><p>What does <code>md</code> mean? Well, turns out we can decided a <strong>cutoff point</strong> for when the cells should all go on <strong>separate rows</strong> for smaller devices!</p>
+<ul>
+<li><strong>Large</strong> (<code>lg</code>), 1200px</li>
+<li><strong>Medium</strong> (<code>md</code>), 992px</li>
+<li><strong>Small</strong> (<code>sm</code>), 768px</li>
+<li><strong>Extra small</strong> (<code>xs</code>) 480px</li>
+</ul>
+</div></section>
+<section class="slide" data-pos="5-3-6">
+<span class="pos">5-3-6</span>
+<div class="slidecontent"><p>These are implemented through something called <strong>media queries</strong>:</p>
+<pre><code class="lang-css">@<span class="hljs-keyword">media</span> (min-width: <span class="hljs-number">992px</span>)
+.col-md-<span class="hljs-number">6</span> {
+    <span class="hljs-selector-tag">width</span>: 50%;
+}
+</code></pre>
+</div></section>
+</section>
+<!--ENDSECTION3--><!--STARTSECTION4--><section>
+  <section class="slide sectiontitle">
+    <div class="slidecontent">
+      <div class='sectioncount'>Section 4/7</div>
+      <h3>Bootstrap components</h3>
+      <p>The building blocks</p>
+</p>
+    </div>
+  </section>
+  <section class="slide" data-pos="5-4-1">
+<span class="pos">5-4-1</span>
+<div class="slidecontent"><p>Bootstrap provides a bunch of different solutions for <strong>common UI problems</strong>, isolated as components.</p>
+</div></section>
+<section class="slide" data-pos="5-4-2">
+<span class="pos">5-4-2</span>
+<div class="slidecontent"><p>Most <strong>common UI components</strong> are predefined in Bootstrap. Here is a <strong>buttongroup</strong>:</p>
+<pre><code class="lang-html"><span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"btn-group"</span> <span class="hljs-attr">role</span>=<span class="hljs-string">"group"</span> <span class="hljs-attr">aria-label</span>=<span class="hljs-string">"..."</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">button</span> <span class="hljs-attr">type</span>=<span class="hljs-string">"button"</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"btn btn-default"</span>&gt;</span>Left<span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">button</span> <span class="hljs-attr">type</span>=<span class="hljs-string">"button"</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"btn btn-default"</span>&gt;</span>Middle<span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">button</span> <span class="hljs-attr">type</span>=<span class="hljs-string">"button"</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"btn btn-default"</span>&gt;</span>Right<span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+</code></pre>
+<div class="btn-group" role="group" aria-label="...">
+  <button type="button" class="btn btn-default">Left</button>
+  <button type="button" class="btn btn-default">Middle</button>
+  <button type="button" class="btn btn-default">Right</button>
+</div></div></section>
+<section class="slide" data-pos="5-4-3">
+<span class="pos">5-4-3</span>
+<div class="slidecontent"><p>Note again how <strong>Bootstrap works purely with classes</strong>. For each component you simply need to learn what <strong>classes to add</strong>, and what <strong>attributes power them</strong>!</p>
+</div></section>
+</section>
+<!--ENDSECTION4--><!--STARTSECTION5--><section>
+  <section class="slide sectiontitle">
+    <div class="slidecontent">
+      <div class='sectioncount'>Section 5/7</div>
+      <h3>Behaviour</h3>
+      <p>adding somewhizzbang</p>
+</p>
+    </div>
+  </section>
+  <section class="slide" data-pos="5-5-1">
+<span class="pos">5-5-1</span>
+<div class="slidecontent"><p>If you included the bootstrap JavaScript file, you can use the <strong>behavioral components</strong>.</p>
+<p>They are very similar to the CSS components, except they have some <strong>interaction</strong>.</p>
+</div></section>
+<section class="slide" data-pos="5-5-2">
+<span class="pos">5-5-2</span>
+<div class="slidecontent"><p>Under the hood they are using <strong>jQuery</strong>, and each component is defined as a jQuery plugin.</p>
+</div></section>
+<section class="slide" data-pos="5-5-3">
+<span class="pos">5-5-3</span>
+<div class="slidecontent"><p>We include the components like before, using specific <strong>classes and attributes</strong> in our markup.</p>
+</div></section>
+<section class="slide" data-pos="5-5-4">
+<span class="pos">5-5-4</span>
+<div class="slidecontent"><p>There are then <strong>two different ways of controlling the behaviour</strong>:</p>
+<ul>
+<li>Using <strong>JavaScript</strong>, calling the jQuery plugins manually</li>
+<li>Using <strong>declarative attributes in the HTML</strong></li>
+</ul>
+<p>The <strong>latter is most common</strong>, since you don&#39;t have to program anything yourself!</p>
+</div></section>
+<section class="slide" data-pos="5-5-5">
+<span class="pos">5-5-5</span>
+<div class="slidecontent"><p>Here&#39;s an example of how <strong>attributes can control behaviours</strong> too:</p>
+<pre><code class="lang-html"><span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"alert alert-warning alert-dismissible fade in"</span> <span class="hljs-attr">role</span>=<span class="hljs-string">"alert"</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">button</span> <span class="hljs-attr">type</span>=<span class="hljs-string">"button"</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"close"</span> <span class="hljs-attr">data-dismiss</span>=<span class="hljs-string">"alert"</span> <span class="hljs-attr">aria-label</span>=<span class="hljs-string">"Close"</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">aria-hidden</span>=<span class="hljs-string">"true"</span>&gt;</span>×<span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
+  <span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span>
+  Awright, you can dismiss me!
+<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+</code></pre>
+<div class="alert alert-warning alert-dismissible fade in" role="alert">
+  <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">×</span></button>
+  Awright, you can dismiss me!
+</div></div></section>
+</section>
+<!--ENDSECTION5--><!--STARTSECTION6--><section>
+  <section class="slide sectiontitle">
+    <div class="slidecontent">
+      <div class='sectioncount'>Section 6/7</div>
+      <h3>Exercise - trying it out</h3>
+      <p>We can all use some bootstrapping!</p>
+</p>
+    </div>
+  </section>
+  <section class="slide" data-pos="5-6-1">
+<span class="pos">5-6-1</span>
+<div class="slidecontent"><p>Enough chatter - let&#39;s <strong>throw CSS bootstrap into the game</strong>, and watch our players&#39; minds get collectively blown!</p>
+</div></section>
+<section class="slide list" data-pos="5-6-2">
+<span class="pos">5-6-2</span>
+<div class="slidecontent">
+<p>There&#39;s <strong>three simple steps</strong> to this:</p>
+<ul>
+<li><span>a</span>Download the file</li>
+<li><span>b</span>Link it in the HTML files</li>
+<li><span>c</span>Start using the provided classes</li>
+</ul>
+</div></section>
+<section class="slide num numA" data-pos="5-6-3">
+<span class="pos">5-6-3</span>
+<div class="slidecontent">
+<p>First we need to <strong>include the basic CSS file</strong>. We won&#39;t bother with themes or JavaScript behaviour.</p>
+<p><strong>Download this file</strong> and place it in your project: <a href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css</a></p>
+</div></section>
+<section class="slide num numB" data-pos="5-6-4">
+<span class="pos">5-6-4</span>
+<div class="slidecontent">
+<p>Now we must <strong>link the bootstrap stylesheet in all our HTML files</strong> by adding a <code>link</code> element, just like you previously did with your own CSS file.</p>
+</div></section>
+<section class="slide num numC" data-pos="5-6-5">
+<span class="pos">5-6-5</span>
+<div class="slidecontent">
+<p>Finally for the fun part - start <strong>adding Bootstrap classes</strong> to your markup! Presumably you&#39;ll want to change the markup some as well.</p>
+<p>Explore the documentation at <a href="http://getbootstrap.com/">http://getbootstrap.com/</a> to see what is available and how it works!</p>
+</div></section>
+<section class="slide" data-pos="5-6-6">
+<span class="pos">5-6-6</span>
+<div class="slidecontent"><p>If you aren&#39;t sure what to use and want a dedicated challenge - try to <strong>make the game work well on mobile</strong>!</p>
+<p>Use the Bootstrap grid, or just manual media queries if you feel cocky.</p>
+</div></section>
+<section class="slide" data-pos="5-6-7">
+<span class="pos">5-6-7</span>
+<div class="slidecontent"><p>To <strong>debug mobile versions</strong>, use the <strong>viewport tester</strong> in devtools!</p>
+<p><img src="resources/images/mobile.png" alt=""></p>
+</div></section>
+<section class="slide" data-pos="5-6-8">
+<span class="pos">5-6-8</span>
+<div class="slidecontent"><p>Afterwards, as per usual, <strong>make a PR</strong> with the improved game! :)</p>
+</div></section>
+</section>
+<!--ENDSECTION6--><!--STARTSECTION7--><section>
+  <section class="slide sectiontitle">
+    <div class="slidecontent">
+      <div class='sectioncount'>Section 7/7</div>
+      <h3>Exercise - Trying LESS too</h3>
+      <p>Less is more</p>
+</p>
+    </div>
+  </section>
+  <section class="slide" data-pos="5-7-1">
+<span class="pos">5-7-1</span>
+<div class="slidecontent"><p>Let&#39;s <strong>pay our debts</strong> from last time - we never did try out LESS!</p>
+</div></section>
+<section class="slide list" data-pos="5-7-2">
+<span class="pos">5-7-2</span>
+<div class="slidecontent">
+<p>Here&#39;s what we need to do:</p>
+<ul>
+<li><span>a</span>Install NodeJS</li>
+<li><span>b</span>Install LESS</li>
+<li><span>c</span>Create a LESS file</li>
+<li><span>d</span>Compile the LESS into CSS</li>
+</ul>
+</div></section>
+<section class="slide num numA" data-pos="5-7-3">
+<span class="pos">5-7-3</span>
+<div class="slidecontent">
+<p>First we <strong>install NodeJS</strong> (and through that also NPM)! We <strong>won&#39;t talk much about what they are</strong>, that&#39;ll come later. For now we&#39;ll just <strong>throw it in and use it</strong>.</p>
+</div></section>
+<section class="slide" data-pos="5-7-4">
+<span class="pos">5-7-4</span>
+<div class="slidecontent"><p>Go to <a href="https://nodejs.org/">https://nodejs.org/</a>, click the version marked <strong>Recommended for most users</strong>, and run the downloaded installer!</p>
+<p>The only choice that matters during the installation is to <strong>add NodeJS to &quot;path&quot;</strong> or whatever you Windows peeps call it.</p>
+</div></section>
+<section class="slide" data-pos="5-7-5">
+<span class="pos">5-7-5</span>
+<div class="slidecontent"><p>Afterwards you&#39;ll get some new icons but we probaby won&#39;t use those - instead, open a regular terminal (Command Prompt or Windows Power Shell, it doesn&#39;t really matter), and type the command <code>node</code> - if you now get an empty prompt (click ctrl+C to quit it), it worked!</p>
+</div></section>
+<section class="slide num numB" data-pos="5-7-6">
+<span class="pos">5-7-6</span>
+<div class="slidecontent">
+<p>Now with NodeJS installed, let&#39;s install LESS! In a terminal, type the following:</p>
+<pre><code>npm <span class="hljs-keyword">install</span> -g <span class="hljs-keyword">less</span>
+</code></pre><p>That&#39;s it, you now have LESS! :)</p>
+</div></section>
+<section class="slide num numC" data-pos="5-7-7">
+<span class="pos">5-7-7</span>
+<div class="slidecontent">
+<p>Time to start using LESS!</p>
+<p>First, take your regular CSS file and save it with a <code>.less</code> extension right next to the old one!</p>
+</div></section>
+<section class="slide" data-pos="5-7-8">
+<span class="pos">5-7-8</span>
+<div class="slidecontent"><p>Now, make use of the LESS syntax! Peek at the section in the last chapter, or at <a href="http://lesscss.org/">http://lesscss.org/</a>.</p>
+</div></section>
+<section class="slide num numD" data-pos="5-7-9">
+<span class="pos">5-7-9</span>
+<div class="slidecontent">
+<p>Finally, time to <strong>compile our LESS into CSS</strong>!</p>
+<p>In a terminal, <strong>navigate into the folder</strong> where the <code>.less</code> file is and execute:</p>
+<pre><code><span class="hljs-selector-tag">lessc</span> <span class="hljs-selector-tag">style</span><span class="hljs-selector-class">.less</span> <span class="hljs-selector-tag">style</span><span class="hljs-selector-class">.css</span>
+</code></pre><p>This will overwrite your old file with a compiled version!</p>
+</div></section>
+<section class="slide" data-pos="5-7-10">
+<span class="pos">5-7-10</span>
+<div class="slidecontent"><p>Reload the game to make sure it works as intended!</p>
+<p>When you&#39;re done, <strong>submit a new PR</strong> as usual!</p>
+</div></section>
+</section>
+<!--ENDSECTION7--><!--ENDCHAPTERCONTENT-->
+        
+
+      </div>
+    </div>
+
+    <script type="text/javascript">
+      var basehref = window.location.href.replace(/chapter\d.*?$/,'')
+
+      document.addEventListener("keydown",function(e){
+        var code = e.which || e.keyCode;
+        if (code===13){
+          window.location.href = basehref+"index.html?from="+(5-1);
+        } else if (code >= 49 && code <= 7+48) {
+          window.location.hash = "#/" + (code-48+1+0);
+        }
+        if (5 < 12) {
+          if (code===99){ // the letter C for next Chapter
+            window.location.href = basehref+"chapter"+(5+1)+".html"
+          }
+        }
+      });
+    </script>
+    <script src="mc2/scripts/head.js" type="text/javascript"></script>
+    <script src="mc2/scripts/reveal.js" type="text/javascript"></script>
+    <script src="mc2/scripts/jquery.js" type="text/javascript"></script>
+    <script type="text/javascript">
+
+  Reveal.initialize({
+    controls: true,
+    progress: true,
+    history: true,
+    center: true,
+    showNotes: false,
+    transition: 'slide',
+    dependencies: [
+      { src: 'mc2/scripts/plugin/notes/notes.js', async: true }
+    ]
+  })
+
+    window.onload = function(){
+
+      var links = document.querySelectorAll("a.link");
+      for(var i=0;i<links.length;i++){
+        var link = links[i];
+        link.innerHTML = link.innerHTML.replace(/ /g,'&nbsp;')
+      }
+      var posElem = document.getElementById('pos')
+      function updateReference(){
+        setTimeout(function(){
+          var currentpos = document.querySelector('section.present[data-pos]')
+          if (currentpos){
+            posElem.innerHTML = currentpos.getAttribute('data-pos')
+          } else {
+            posElem.innerHTML = ''
+          }
+          if (document.querySelector('.present.chaptertitle')){
+            document.body.classList.add('atchaptertitle');
+          } else {
+            document.body.classList.remove('atchaptertitle');
+          }
+        },10)
+      }
+
+      window.addEventListener("hashchange",updateReference);
+
+      updateReference();
+    };
+
+    </script>
+    <!--STARTCOURSESPECIFICSCRIPTS--><script type="text/javascript" src="scripts/bootstrap.js"></script>
+<script type="text/javascript" src="scripts/cssdemo.js"></script>
+<script type="text/javascript" src="scripts/scoped_polyfill.js"></script><!--ENDCOURSESPECIFICSCRIPTS-->
+    <script type="text/javascript" src="/reload/reload.js"></script>
+  </body>
+</html>
